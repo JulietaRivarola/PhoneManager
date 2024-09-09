@@ -1,0 +1,25 @@
+<!-- Ruta sugerida: ~/.m2/settings-custom.xml -->
+<settings>
+  <mirrors>
+    <mirror>
+      <id>central</id>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <id>no-proxy</id>
+      <!-- Desactiva el proxy -->
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <http.proxyHost></http.proxyHost>
+        <http.proxyPort></http.proxyPort>
+        <https.proxyHost></https.proxyHost>
+        <https.proxyPort></https.proxyPort>
+      </properties>
+    </profile>
+  </profiles>
+</settings>

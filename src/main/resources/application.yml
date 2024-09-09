@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  flyway:
+    locations: classpath:db/migrations
+    sqlMigrationPrefix: PM-
+  datasource:
+    url: jdbc:mysql://localhost:3307/phone-manager?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    password: 1234
+    username: user
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          metadata:
+            access:
+              allow: true
+security:
+  jwt:
+    token:
+      secret-key: mySecretKey
+cors:
+  allowed-origins:
+    - http://localhost:3000
+
