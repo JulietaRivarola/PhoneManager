@@ -5,9 +5,9 @@ spring:
     locations: classpath:db/migrations
     sqlMigrationPrefix: PM-
   datasource:
-    url: jdbc:mysql://localhost:3307/phone-manager?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
-    password: 1234
-    username: user
+    url: jdbc:mysql://sql3.freemysqlhosting.net:3306/sql3730302?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    password: sNFaSGhDgR
+    username: sql3730302
   jpa:
     properties:
       hibernate:
