@@ -5,7 +5,7 @@ spring:
     locations: classpath:db/migrations
     sqlMigrationPrefix: PM-
   datasource:
-    url: jdbc:mysql://sql3.freemysqlhosting.net:3306/sql3730302?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://sql3.freemysqlhosting.net:3306/sql3730302
     password: sNFaSGhDgR
     username: sql3730302
   jpa:
